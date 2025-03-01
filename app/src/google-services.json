@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "370438433891",
+    "firebase_url": "https://elt-tracking-app-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "elt-tracking-app",
+    "storage_bucket": "elt-tracking-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:370438433891:android:df1033401d92cbbce7dc56",
+        "android_client_info": {
+          "package_name": "com.example.grpasg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "370438433891-f6ofhi546752u9r34fcmaq88lnv7mhit.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.grpasg",
+            "certificate_hash": "7b9ec4816bf7769b809283c7658cc3124da47ac1"
+          }
+        },
+        {
+          "client_id": "370438433891-tm3t0om8d8i32rh1ae1j7gj5fn9885jq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.grpasg",
+            "certificate_hash": "029b8c5f298961510740462c6f451c8f42f4c5bb"
+          }
+        },
+        {
+          "client_id": "370438433891-i7hlp12n22f2oj0f84t2daq6rncorl77.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7bBhcshzkFav1pOPVOL2-F1BZ1DHxezM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "370438433891-eii12nk3dtto3c53e3pe3b4pbrro5ohv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

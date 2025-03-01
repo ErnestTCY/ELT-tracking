@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="grey">#808080</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#3476C6</color>
+    <color name="ly">#f1ede4</color>
+    <color name="city">#363637</color>
+    <color name="country">#A6A6A6</color>
+    <color name="green">#76FF03</color>
+    <color name="gray">#B6B4B4</color>
+    <color name="yellow">#FFEA00</color>
+    <color name="background_white">@color/white</color>
+    <color name="text_primary">@color/black</color>
+    <color name="text_secondary">#757575</color>
+    <color name="primary">#FF6200EE</color>
+    <color name="gold">#FFD700</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="bronze">#CD7F32</color>
+    <color name="challenge_background">#F5F6FF</color>
+    <color name="progress_background">#ECEDF5</color>
+
+</resources>

@@ -1,0 +1,23 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.google.gms:google-services:4.4.0' // Add this line
+    }
+}
+plugins {
+    id 'com.android.application' version '8.2.2' apply false
+    id 'com.android.library' version '8.2.2' apply false
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'com.google.android.gms:play-services-auth:20.7.0'
+        force 'com.google.firebase:firebase-auth:22.1.1'
+    }
+}
+
+

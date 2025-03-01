@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"> <!-- Correctly declare the app namespace -->
+
+    <item
+        android:id="@+id/menu_history"
+        android:title="@string/menu_history"
+        android:icon="@drawable/ic_history"
+        android:visible="true"
+        app:showAsAction="ifRoom" /> <!-- Uses the app namespace -->
+
+     <!-- Uses the app namespace -->
+</menu>

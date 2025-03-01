@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GrpAsg</string>
+    <string name="menu_history">History</string>
+    <string name="menu_settings">Settings</string>
+    <string name="check_tyre_icon">CHECK TYRE</string>
+    <string name="check_brake_icon">CHECK BRAKE</string>
+    <string name="change_accessories_icon">CHANGE ACCESSORIES</string>
+    <string name="default_web_client_id">370438433891-i7hlp12n22f2oj0f84t2daq6rncorl77.apps.googleusercontent.com</string>
+
+</resources>

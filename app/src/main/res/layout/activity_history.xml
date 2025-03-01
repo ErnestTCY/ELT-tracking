@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp">
+
+        <!-- Left-aligned Image -->
+        <ImageView
+            android:id="@+id/UserProfile"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:contentDescription="Left user Avatar"
+            android:src="@drawable/usericon" />
+
+        <!-- Spacer to push content to edges -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/Weather"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="20dp"
+            android:contentDescription="Weather"
+            android:src="@drawable/cloudy" />
+        <!-- Top-Right Option Menu -->
+        <ImageView
+            android:id="@+id/OptionsMenu"
+            android:layout_width="56dp"
+            android:layout_height="54dp"
+            android:src="@drawable/optmenu"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Options Menu" />
+
+        <!-- Right-aligned Image -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="left">
+        <LinearLayout
+            android:id="@+id/running_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true">
+
+        <ImageView
+            android:id="@+id/run"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/runicon"
+            android:contentDescription="Running Icon"
+            android:padding="8dp"
+            android:layout_marginEnd="8dp"/>
+
+            <View
+                android:id="@+id/underline_run"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/yellow"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cycling_container"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true">
+        <ImageView
+            android:id="@+id/cycle"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/cycleicon"
+            android:contentDescription="Cycling Icon"
+            android:padding="8dp"
+            android:layout_marginStart="8dp"/>
+            <View
+                android:id="@+id/underline_cycle"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/yellow"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <!-- RecyclerView for History -->
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/history_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="618dp"
+        android:layout_marginTop="14dp"
+        android:scrollbars="vertical" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/nav_running"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/runicon" />
+        <ImageView
+            android:id="@+id/nav_community"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/communityicon" />
+
+        <ImageView
+            android:id="@+id/nav_leaderboard"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/leaderboardicon" />
+
+        <ImageView
+            android:id="@+id/nav_reminder"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/remindericon" />
+    </LinearLayout>
+
+</LinearLayout>
