@@ -34,9 +34,8 @@ public class HistoryActivity extends AppCompatActivity {
     private List<HistoryEntry> historyEntries = new ArrayList<>();
     private boolean isRunningMode = true;
 
-    FirebaseDatabase database = FirebaseDatabase.getInstance("https://elt-tracking-app-default-rtdb.asia-southeast1.firebasedatabase.app/");
+    FirebaseDatabase database = FirebaseDatabase.getInstance("https://Firebase");
     DatabaseReference databaseReference = database.getReference();
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,10 +62,11 @@ public class HistoryActivity extends AppCompatActivity {
         ImageView navReminder = findViewById(R.id.nav_reminder);
         ImageView userProfile = findViewById(R.id.UserProfile);
         ImageView optionsMenu = findViewById(R.id.OptionsMenu);
-        ImageView  navWeather =findViewById(R.id.Weather);
+        ImageView navWeather = findViewById(R.id.Weather);
 
         // Set up navigation
-        Navigation.setupNavigation(this, navRunning, navCommunity, navLeaderboard, navReminder, userProfile,navWeather);
+        Navigation.setupNavigation(this, navRunning, navCommunity, navLeaderboard, navReminder, userProfile,
+                navWeather);
 
         // Set up options menu
         Navigation.setupOptionsMenu(this, optionsMenu);
@@ -84,7 +84,6 @@ public class HistoryActivity extends AppCompatActivity {
         LinearLayout cyclingContainer = findViewById(R.id.cycling_container);
         View underlineRun = findViewById(R.id.underline_run);
         View underlineCycle = findViewById(R.id.underline_cycle);
-
 
         // Set up click listeners for toggle buttons
         runningContainer.setOnClickListener(v -> {
@@ -118,13 +117,12 @@ public class HistoryActivity extends AppCompatActivity {
         loadHistoryData("running");
     }
 
-
-
     private void redirectToLogin() {
         Intent intent = new Intent(this, LoginActivity.class);
         startActivity(intent);
         finish();
     }
+
     private void loadHistoryData(String activityType) {
         databaseReference.child(activityType)
                 .addValueEventListener(new ValueEventListener() {
@@ -150,9 +148,5 @@ public class HistoryActivity extends AppCompatActivity {
                     }
                 });
     }
-
-
-
-
 
 }
