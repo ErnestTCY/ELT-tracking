@@ -57,7 +57,7 @@
         <activity android:name="com.example.grpasg.WeatherActivity" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyAteo6chIdQtTQp1AiH1Gf0DfUoYMfYELY" />
+            android:value="Google_API_KEY" />
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
